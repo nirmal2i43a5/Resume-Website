@@ -1,5 +1,3 @@
-
-
 {% extends 'base.html' %}
 
 {% load static%}
@@ -10,154 +8,227 @@
 {% block content %}
 
 <div class="container">
+    <div class="col-md-12">
+        <div class="card mt-4">
+            <div class="card-header text-center text-uppercase">
+                <h4><strong>Resume Made By Using Python</strong></h4>
+            </div>
 
-<br>
+        </div>
+    </div> <br>
+
     <div class="row">
         <div class="col-md-3">
-            <div class="card card-body h-100  border-info" id="profile-wrapper">
-                <img id="profile-pic" src="{% static 'images/nirmalpandey.jpg' %}" >
+            <div class="card card-body h-100  border-primary" id="profile-wrapper">
+                <img id="profile-pic" src="{% static 'images/nirmalpandey.jpg' %}">
                 <hr>
                 <h4>Hi, I am Nirmal</h4>
-                <p>I love coding, doing research and </p>
+                <span>I love coding, doing research,collaborating with teams.</span>
+                <hr>
+
+                <button  style="color:white;background-color:#DAA520;" data-toggle="modal" data-target="#findMe"><strong>Click Here To FInd Me</strong></button>
+
+               
             </div>
-        </div
+        </div </div>
+
+        <div class="col-md-5">
+            <div class="card card-body h-100  border-primary" >
+
+                <ul class="list-group">
+                    <li class="list-group-item active" style="background-color:#0D1A81;">
+                        <h4><strong>STRENGTHS</strong></h4>
+                    </li>
+                    <li class="list-group-item"><span style="color:#DAA520;"><i class="fas fa-lg fa-comment"></i></span>
+                        <strong>Oral and Written Communication</strong></li>
+                    <li class="list-group-item"><span style="color:#DAA520;"><i
+                                class="fas fa-lg fa-hand-rock"></span></i> <strong>Fast Learner</strong></li>
+                    <li class="list-group-item"><span style="color:#DAA520;"><i
+                                class="fas fa-lg fa-book-open"></span></i> <strong>Committed to Lifelong
+                            Learning</strong></li>
+                    <li class="list-group-item"><span style="color:#DAA520;"><i class="fas fa-lg fa-users"></span></i>
+                        <strong>Team Buildings</strong></li>
+                    <li class="list-group-item"><span style="color:#DAA520;"><i class="fas fa-lg fa-check"></span></i>
+                        <strong>Reliable and Consistent</strong></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-body h-100 border-primary">
+                <div class="card-header  text-light" style="background-color:#0D1A81;">
+                    <h4><strong>EDUCATION</strong></h4>
+                </div>
+                <hr>
+                <p>I am currently studying  <strong>BICT</strong>
+                    in <strong>VIRINCHI COLLEGE . </strong>   <a href="https://virinchicollege.edu.np/" >https://virinchicollege.edu.np/</a></p>
+               
+
+                <!-- <span class="text-center"><strong>BICT</strong></span> -->
+                <hr>
+
+                <span class="text-left"><strong>Join : 2018</strong> (Ongoing fourth Semster) </span>
+                <hr>
+
+
+                <span class="text-center"><strong>AFFILIATED TO</strong></span>
+                <h5 class="text-center">
+                    <span style="color:blue;"><strong>ASIA</strong></span>
+                    <span style="color:red;"><strong>E</strong></span>
+                    <span style="color:blue;"><strong>UNIVERSITY</strong></span>
+                </h5>
+                <a href="https://aeu.edu.my/" class="text-center">https://aeu.edu.my/</a>
+
+            </div>
+        </div>
     </div>
+</div>
 
-    <div class="col-md-5">
-        <div class="card card-body h-100  border-info">
-         
-            
-       
-         
+<hr>
 
-            <ul class="list-group">
-                <li class="list-group-item active"><h4><strong>STRENGTHS</strong></h4></li>
-                <li class="list-group-item"><span style="color:#DAA520;"><i class="fas fa-lg fa-comment"></i></span> <strong>Oral and Written Communication</strong></li>
-                <li class="list-group-item"><span style="color:#DAA520;"><i class="fas fa-lg fa-hand-rock"></span></i> <strong>Fast Learner</strong></li>
-                <li class="list-group-item"><span style="color:#DAA520;"><i class="fas fa-lg fa-book-open"></span></i> <strong>Committed to Lifelong Learning</strong></li>
-                <li class="list-group-item"><span style="color:#DAA520;"><i class="fas fa-lg fa-users"></span></i>  <strong>Team Buildings</strong></li>
-                <li class="list-group-item"><span style="color:#DAA520;"><i class="fas fa-lg fa-check"></span></i>  <strong>Reliable and Consistent</strong></li>
-              </ul>
-           
+<div class="row" style="margin-right:80px;margin-left:80px;">
+
+    <div class="col-md-8 ">
+        <div class="card card-body h-100  border-primary">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="card card-body h-100 border-primary">
+
+                        <div class="card-header  text-light" style="background-color:#0D1A81;">
+                            <h4><strong>LANGUAGES</strong></h4>
+                        </div>
+                        <hr id="horizontal">
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML & CSS</li>
+                            <li>C</li>
+                            <li>Java</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="card card-body h-100 border-primary">
+
+                        <div class="card-header  text-light" style="background-color:#0D1A81;">
+                            <h4><strong>SKILLS</strong></h4>
+                        </div>
+                        <hr id="horizontal">
+                        <div class="row">
+                            <div class="col-md-6">
+
+
+                                <ul>
+                                    <li>Django</li>
+                                    <li>Django Rest</li>
+                                    <li>Mysql</li>
+                                    <li>React</li>
+                                    <li>Git</li>
+
+                                </ul>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <ul>
+                                    <li>AWS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="col-md-4">
-        <div class="card card-body h-100">
-            <div class="card-header bg-primary text-light"><h4><strong>EDUCATION</strong></h4></div>
-<hr>
-            <p >I am currently studying Bachelor's in Information and Communcation Technology<strong> (BICT)</strong> in <strong>VIRINCHI COLLEGE . </strong></p>
-          
-            <!-- <span class="text-center"><strong>BICT</strong></span> -->
-            <hr>
+        <div class="card card-body h-100 border-primary">
+            <div class="text-center "><strong>FIND ME ONLINE</strong></div>
+            <hr id="horizontal">
+           
 
-            <span class="text-left"><strong>Join : 2018</strong> (Ongoing fourth Semster) </span>
-            <hr>
-         
-
-            <span class="text-center"><strong>AFFILIATED TO</strong></span>
-            <h5 class="text-center" >
-                <span style="color:blue;"><strong>ASIA</strong></span>
-                <span style="color:red;"><strong>E</strong></span>
-                <span style="color:blue;"><strong>UNIVERSITY</strong></span>
-            </h5>
-
-
-     
-
-
-            
+            <hr id="horizontal">
         </div>
+
+
+
+    </div>
+
+</div>
+<hr>
+
+<div class="row" style="margin-right:80px;margin-left:80px;">
+
+    <div class="col-md-6">
+        <div class="card card-body h-100 border-primary">
+
+
+            <div class="card-header text-light"  style="background-color:#0D1A81;">
+                <h4><strong>SHORT TERM GOAL</strong></h4>
+               
+            </div>
+            <hr id="horizontal">
+
+            <p>Besides building projects,I would like to learn new set of skills which might assists me to enter the position where I can be the part of bigger teams and learn extra from other with more experienced than myself, and implement such concepts in real world project.</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="col-md-6">
+        <div class="card card-body h-100 border-primary">
+
+
+            <div class="card-header text-light" style="background-color:#0D1A81;">
+                <h4><strong>HOW I LEARN</strong></h4>
+            </div>
+          
+            <hr id="horizontal">
+           
+            <p><span style="color:#DAA520;"> <i class="fas fa-arrow-right"></i></span> Reverse Engineer And Build Ugly Prototype First</p>
+          
+            <p><span style="color:#DAA520;"> <i class="fas fa-arrow-right"></i></span>
+            If I want to learn about the pre-existing product then I break the various components piece by piece and work on separate piece of component to make it work,and also try to find out why things work the way they do.
+            </p>
+        
+            <p><span style="color:#DAA520;"> <i class="fas fa-arrow-right"></i></span> 
+                Documentation,videos,books,and somewhat blogs is the main reference for me to learn. 
+        </p>
+
+
+        </div>
+
+
     </div>
 </div>
-
- 
-  
-
-       
-    </div>
-
-    <hr>
-
-    <div class="row">
-
-        <div class="col-md-8">
-            <div class="card card-body h-100  border-info">
-                <!-- <h4>Programming Languages And Skills</h4>
-                <hr> -->
-    
-                <div class="row">
-                    <div class="col-md-6">
-    
-                        <div class="card card-body h-100">
-    
-                            <div class="card-header bg-primary text-light"><h4><strong>PROGRAMMING</strong></h4></div>
-                            <hr id="horizontal">
-                            <ul>
-                                <li>Python</li>
-                                <li>JavaScript</li>
-                                <li>HTML & CSS</li>
-                                <li>C</li>
-                                <li>Java</li>
-                            </ul>
-    
-                        </div>
-    
-                    </div>
-    
-                    <div class="col-md-6">
-    
-                        <div class="card card-body h-100">
-    
-                            <div class="card-header bg-primary text-light"><h4><strong>SKILLS</strong></h4></div>
-                            <hr id="horizontal">
-                                    <div class="row">
-                                        <div class="col-md-6">
-    
-    
-                                            <ul>
-                                                <li>Django</li>
-                                                <li>Django Rest</li>
-                                                <li>Mysql</li>
-                                                <li>React</li>
-                                                <li>Git</li>
-                                              
-                                            </ul>
-    
-                                        </div>
-                                        <div class="col-md-6">
-    
-                                          <ul>
-                                            <li>AWS</li>
-                                          </ul>
-                                        </div>
-                                    </div>
-    
-                        </div>
-    
-                    </div>
-                </div>
-    
-    
-            </div>
-    
-
-    </div>
 </div>
 
 <style>
-    #horizontal{
+    #horizontal {
 
-        background-color:black;
+        background-color: black;
         padding-bottom: 1px;
-      
+        margin-block-start: 2px;
+
+
 
     }
-    #aeu-university{
-        height:170px;
+   
+
+    #aeu-university {
+        height: 170px;
     }
 </style>
-    
+
+
+
+{% include 'resume/profile.html' %}
+
 {% endblock %}
-
-
